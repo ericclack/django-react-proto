@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pipeline',
     'hello'
 )
 
@@ -134,5 +135,34 @@ STATICFILES_DIRS = (
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+# ES6 Compilation
+# TODO: https://django-pipeline.readthedocs.io/en/latest/configuration.html
+# http://django-pipeline.readthedocs.io/en/latest/compilers.html#es6-compiler
+
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
+
+PIPELINE = {
+    'PIPELINE_ENABLED': True,
+    'JAVASCRIPT': {
+        'news': {
+            'source_filenames': (
+              'js/news-page.es6',
+            ),
+            'output_filename': 'js/news-page.js',
+        }
+    },
+    'COMPILERS': ('pipeline.compilers.es6.ES6Compiler', ), 
+    'CSS_COMPRESSOR': False,
+    'JS_COMPRESSOR': False,
+    'BABEL_BINARY': '/usr/local/bin/babel',
+}
+
 
