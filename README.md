@@ -47,3 +47,7 @@ For more information about using Python on Heroku, see these Dev Center articles
 
     brew install ... babel?
     npm ... see packages.json
+
+What about?
+
+http://stackoverflow.com/questions/31593694/do-i-need-require-js-when-i-use-babel

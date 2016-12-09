@@ -154,6 +154,7 @@ PIPELINE = {
     'JAVASCRIPT': {
         'news': {
             'source_filenames': (
+              'js/prismic-news.es6', 
               'js/news-page.es6',
             ),
             'output_filename': 'js/news-page.js',

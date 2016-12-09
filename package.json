@@ -5,7 +5,10 @@
   "engines": {
     "node": "5.9.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
   "keywords": [
     "node"
   ],
