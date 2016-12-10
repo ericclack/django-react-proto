@@ -20,8 +20,8 @@ Now install:
 
 ## To Do
 
-1. Improve styling a bit of homepage
-1. Add tests
+1. Get it working on Heroku
+1. Add a UI test
 1. Add another page, with React Router?
 1. Make `import` work in client-side JS? http://stackoverflow.com/questions/31593694/do-i-need-require-js-when-i-use-babel
 
