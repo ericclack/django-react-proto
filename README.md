@@ -1,8 +1,32 @@
-# python-getting-started
+# django-react-proto
 
-A barebones Python app, which can easily be deployed to Heroku.
+A barebones Django + React app, e.g. for Single Page Applications, which can easily be deployed to Heroku.
 
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+
+## Set up
+
+We use `pip` to install Python things and `npm` to install JS things.
+
+First create/activate a virtualenv:
+
+    virtualenv VENV # If you've not already done this
+    source VENV/bin/activate
+
+Now install:
+
+    pip install -r requirements.txt
+    npm install
+
+
+## To Do
+
+1. Improve styling a bit of homepage
+1. Add tests
+1. Add another page, with React Router?
+1. Make `import` work in client-side JS? http://stackoverflow.com/questions/31593694/do-i-need-require-js-when-i-use-babel
+
+
+## Stuff from Heroku...
 
 ## Running Locally
 
@@ -45,9 +69,3 @@ For more information about using Python on Heroku, see these Dev Center articles
 
 ## More things to install...
 
-    brew install ... babel?
-    npm ... see packages.json
-
-What about?
-
-http://stackoverflow.com/questions/31593694/do-i-need-require-js-when-i-use-babel
