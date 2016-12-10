@@ -1,0 +1,13 @@
+div.news-panel {
+    width: 30%;
+    margin-right: 1em;
+    float: left;
+}
+
+div.news-panel .news-img {
+    display: inline-block;
+    height: 10em;
+    width: 100%;
+    overflow: hidden;
+}
+    
