@@ -90,3 +90,6 @@ For more information about using Python on Heroku, see these Dev Center articles
 
 - [Python on Heroku](https://devcenter.heroku.com/categories/python)
 
+## Prismic knowhow
+
+Api Doc: https://prismic.io/docs/old/documentation/api-documentation
