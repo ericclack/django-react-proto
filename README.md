@@ -18,6 +18,13 @@ Now install:
     npm install
 
 
+## Heroku set up
+
+We need both Python and NodeJS to run our app on Heroku:
+
+    heroku buildpacks:set heroku/nodejs --index 1
+    heroku buildpacks:set heroku/python --index 2
+
 ## To Do
 
 1. Get it working on Heroku
