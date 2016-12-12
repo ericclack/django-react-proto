@@ -163,7 +163,6 @@ PIPELINE = {
     'COMPILERS': ('pipeline.compilers.es6.ES6Compiler', ), 
     'CSS_COMPRESSOR': False,
     'JS_COMPRESSOR': False,
-    'BABEL_BINARY': '/usr/local/bin/babel',
 }
 
 
