@@ -3,7 +3,7 @@
 A barebones Django + React app, e.g. for Single Page Applications, which can easily be deployed to Heroku.
 
 
-## Set up
+## Local set up
 
 We use `pip` to install Python things and `npm` to install JS things.
 
@@ -24,6 +24,16 @@ We need both Python and NodeJS to run our app on Heroku:
 
     heroku buildpacks:set heroku/nodejs --index 1
     heroku buildpacks:set heroku/python --index 2
+
+### Rollout...
+
+    git push heroku master
+
+### Database set up
+
+(Somehow Heroku knows about the DB addon, see `heroku addons` -- maybe because this was a starter app?)
+
+    heroku run python manage.py migrate
 
 ## To Do
 
