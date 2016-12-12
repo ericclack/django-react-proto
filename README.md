@@ -21,6 +21,12 @@ Now install:
 ## To Do
 
 1. Get it working on Heroku
+ * http://stackoverflow.com/questions/20752611/django-pipeline-heroku-and-sass
+ * https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app
+1. Better JSX compiler, without Node dependency?
+ * https://github.com/caktus/django-jsx
+ * https://github.com/facebookarchive/react-python
+ * http://stackoverflow.com/search?q=%5Bdjango-pipeline%5D+heroku
 1. Add a UI test
 1. Add another page, with React Router?
 1. Make `import` work in client-side JS? http://stackoverflow.com/questions/31593694/do-i-need-require-js-when-i-use-babel
