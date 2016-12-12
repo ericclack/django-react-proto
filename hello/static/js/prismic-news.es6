@@ -1,4 +1,4 @@
-const PRISMIC_API_URL = "http://clack.prismic.io/api";
+const PRISMIC_API_URL = "https://clack.prismic.io/api";
 
 function getNewsItemsFromPrismic(callback) {
     // Fire off *async* call to get news and then
